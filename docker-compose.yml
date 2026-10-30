@@ -1,0 +1,19 @@
+services:
+  redis:
+    image: redis:7
+  api-python:
+    build: ./services/python
+    ports:
+      - "5001:5000"
+    environment:
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+  api-ruby:
+    build: ./services/ruby
+    ports:
+      - "5002:4567"
+    environment:
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
