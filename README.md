@@ -4,6 +4,8 @@
 
 Testes de carga com [Locust](https://locust.io) sobre as duas versões do serviço de extração de links do [Link Extractor](https://github.com/ibnesayeed/linkextractor) (Python/Flask e Ruby/Sinatra), com e sem cache Redis.
 
+**Apresentação:** [slides no Google Slides](https://docs.google.com/presentation/d/1vnXik30JkR-a9WZ0HRorC3tUfVb35aI5LecNCxorAVo/edit)
+
 ## Máquina de teste
 
 Todos os resultados foram obtidos na máquina **matheus-h** (`probe/maquina.json`):
@@ -31,7 +33,7 @@ Todos os resultados foram obtidos na máquina **matheus-h** (`probe/maquina.json
 ### Duas fases
 
 1. **Sondagem** (`tools/probe.py`): 1 repetição por carga. Sobe a carga até a primeira reprovada e refina entre a última aprovada e a reprovada. Define a capacidade máxima da máquina em cada um dos 4 cenários.
-2. **Teste real** (`tools/run.py`): 3 repetições por carga, usando as mesmas cargas nas duas versões, indo até alguns níveis acima da capacidade encontrada.
+2. **Teste real** (`tools/run.py`): 3 repetições por carga, com as cargas de cada cenário escolhidas a partir da capacidade encontrada na sondagem, indo até alguns níveis acima dela.
 
 ## Pré-requisitos
 
