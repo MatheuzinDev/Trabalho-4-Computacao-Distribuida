@@ -1,0 +1,1 @@
+{"requisicoes": 10000, "falhas": 0, "timeouts": 0, "erros": {}, "media_ms": 1201.7183890299905, "mediana_ms": 74, "p95_ms": 11000, "p99_ms": 20000, "max_ms": 19880.833100000018, "req_s": 453.40334595848697, "procs": 1, "gerador_cpu_alta": true, "dbsize": 10}

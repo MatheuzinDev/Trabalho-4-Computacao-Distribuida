@@ -1,0 +1,13 @@
+{
+    "nome":  "matheus-h",
+    "so":  "Windows 11",
+    "processador":  "Intel64 Family 6 Model 158 Stepping 10, GenuineIntel",
+    "nucleos_logicos":  6,
+    "python":  "3.14.5",
+    "locust":  "2.47.0",
+    "nucleos_fisicos":  6,
+    "ram_gb":  15.9,
+    "docker_cpus":  6,
+    "docker_ram_gb":  7.7,
+    "docker_versao":  "29.8.2"
+}
