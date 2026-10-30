@@ -1,0 +1,5 @@
+versao,cache,usuarios_max_ok,primeira_reprovada,vazao_pico_req_s,usuarios_no_pico,gerador_cpu_alta
+python,off,200,220,31.2,25,False
+python,on,4500,4750,519.6,200,True
+ruby,off,110,120,50.7,100,False
+ruby,on,120,150,571.2,100,False
